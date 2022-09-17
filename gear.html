@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Gear for Rent</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/other_logo.png" />
+    <script src="./filter_listings.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <a class="active" href="/#home">Home</a>
+      <a class="active" href="/#details">Rental Logistics</a>
+      <a
+        class="active"
+        href="https://www.sharegrid.com/p/a_good_cause"
+        target="_blank"
+        >Gear</a
+      >
+      <a class="active" href="gear.html">Gear (beta)</a>
+      <a href="/#about">About</a>
+    </div>
+    <section>
+      <h1>I am looking for...</h1>
+      <div style="display: block; max-width: 60%; line-height: 3">
+        <a
+          class="tile"
+          href="#gear"
+          onclick="updateListings()"
+          style="border: 1px solid black; background-color: white"
+          >Show me everything</a
+        >
+        <a class="tile" href="#gear" onclick="updateListings('CAMERAS')"
+          >Cameras</a
+        >
+        <a class="tile" href="#gear" onclick="updateListings('DRONES')"
+          >Drones</a
+        >
+        <a
+          class="tile"
+          href="#gear"
+          onclick="updateListings('CAMERA ACCESSORIES & WIRELESS VIDEO')"
+          >Camera Accessories & Wireless Video</a
+        >
+        <a class="tile" href="#gear" onclick="updateListings('MONITORS')"
+          >Monitors</a
+        >
+        <a class="tile" href="#gear" onclick="updateListings('LENSES')"
+          >Lenses</a
+        >
+        <a class="tile" href="#gear" onclick="updateListings('GRIP')">Grip</a>
+        <a class="tile" href="#gear" onclick="updateListings('LIGHTING')"
+          >Lighting</a
+        >
+        <a class="tile" href="#gear" onclick="updateListings('AUDIO')">Audio</a>
+      </div>
+    </section>
+    <div style="min-height: 100vh">
+      <table id="gear" class="listingtable">
+        <script type="module" src="./firestore.js"></script>
+      </table>
+    </div>
+  </body>
+</html>

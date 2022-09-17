@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,800");
+
+:root {
+  --color-bg: white;
+  --color-text-main: black;
+  --color-primary: #ffc500;
+
+  --low-opacity-bg: rgba(255, 255, 255, 0.8);
+  --wrapper-height: 85vh;
+  --image-max-width: 200px;
+  --font-family: "Roboto Slab";
+  --font-family-header: "Roboto Slab";
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: 0px;
+  font-family: var(--font-family);
+}
+
+.tile {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
+}
+
+box {
+  max-width: 80%;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+}
+/* Style the navbar */
+#navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  position: fixed;
+  background-color: black;
+  height: 55px;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: white;
+  margin: 5px;
+}
+
+#navbar a:hover {
+  background: var(--color-primary);
+  border-radius: 30px;
+  color: black;
+}
+
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  margin: 0 0rem;
+  min-height: 100vh;
+  max-width: 60%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+ul {
+  margin: 0px;
+}
+
+.listingtable {
+  padding-top: 60px;
+  margin: auto;
+  border-spacing: 15px;
+  min-height: 100%;
+}
+
+th {
+  font-weight: 800;
+}
